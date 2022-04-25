@@ -1,0 +1,79 @@
+<head>
+    <title>Olya's website</title>
+    <!--permet d'inclure le css -->
+    <link rel="stylesheet" type="text/css" href="./tictactoe/tictactoe.css">
+    <link rel="stylesheet" type="text/css" href="./langton/langton.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    
+</head>
+
+<body>
+    <h1 id="mainHeader">Olya's website</h1>
+    <nav>
+        <div class="menu">
+            
+            <ul>
+                <li class="menu-html" id="mainButton"><a href="#">Main page</a></li>
+                <li class="menu-html" id="tictactoeButton"><a href="#">Tictactoe</a></li>
+                <li class="menu-html" id="langtonButton"><a href="#">Langton ant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="main" class="page show">
+        <p id="mainDescription">All cats require some level of grooming and most of it can be done right in your house. The type of grooming that your feline needs is based on factors like her hair type or the climate. Cats require more grooming as the weather warms up, as they lose their winter coat.</p>
+        <img id="cats" src="./images/cat.jpg" alt="cats grooming">
+    </section>
+
+    
+
+    <section id="tictactoe" class="page">
+        <div>
+            <h1 id="title">Tic-Tac-Toe!</h1>
+        </div>
+
+        <table id="board">
+            <tr>
+                <td id="case1"></td>
+                <td id="case2"></td>
+                <td id="case3"></td>
+            </tr>
+            <tr>
+                <td id="case4"></td>
+                <td id="case5"></td>
+                <td id="case6"></td>
+            </tr>
+            <tr>
+                <td id="case7"></td>
+                <td id="case8"></td>
+                <td id="case9"></td>
+            </tr>
+        </table>
+        <div id="winnerMessage"></div>
+        <div id="footer">
+            <input id="btn_reset" type="button" value="Reset">
+        </div>
+
+    </section>
+
+    <section id="langton" class="page">
+        <div id="langtonBoard">
+        </div>
+        <!-- <canvas id="grid" width="1000" height="1000"></canvas>
+        <script>
+            document.addEventListener("DOMContentLoaded", ()=>{
+                const langtonCanvas= new LangtonCanvas()
+                langtonCanvas.play();
+            })
+        </script> -->
+    </section>
+
+
+    <!--permet d'inclure le javascript -->
+    <script src="./index.js" type="module"></script>
+    <script src="./tictactoe/tictactoe.js" type="module"></script>
+    <script src="./langton/langton.js" type="module"></script>
+    <!-- <script src="./langton/langtoncanvas.js"></script> -->
+</body>
+
+</html>
